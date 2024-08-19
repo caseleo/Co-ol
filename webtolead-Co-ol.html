@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Déjanos tu solicitud o consulta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulario de Contacto</h2>
+    <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DD50000009SRq" method="POST">
+        <input type="hidden" name="oid" value="00DD50000009SRq">
+        <input type="hidden" name="retURL" value="http://https://co-olhome.cl/">
+
+        <label for="first_name">Nombre</label>
+        <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required>
+
+        <label for="last_name">Apellido</label>
+        <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required>
+
+        <label for="rut">RUT</label>
+        <input id="00NHs0000119xXU" maxlength="20" name="00NHs0000119xXU" size="20" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" size="20" type="text" required>
+
+        <label for="mobile">Teléfono Móvil</label>
+        <input id="mobile" maxlength="40" name="mobile" size="20" type="text" required>
+
+        <label for="ubicacion">Ubicación del Proyecto</label>
+        <input id="00NHs0000119xYI" maxlength="100" name="00NHs0000119xYI" size="20" type="text" required>
+
+        <label for="comienzo">¿Cuándo deseas comenzar?</label>
+        <select id="00NHs0000119xYc" name="00NHs0000119xYc" title="Comienzo" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="Este mes">Este mes</option>
+            <option value="Proximos 3 meses">Próximos 3 meses</option>
+            <option value="Proximos 6 meses">Próximos 6 meses</option>
+            <option value="Aun no lo decido">Aún no lo decido</option>
+        </select>
+
+        <label for="presupuesto">Presupuesto</label>
+        <select id="00NHs0000119xYr" name="00NHs0000119xYr" title="Presupuesto" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="20MM a 30MM">20MM a 30MM</option>
+            <option value="30MM a 40MM">30MM a 40MM</option>
+            <option value="40MM a 60MM">40MM a 60MM</option>
+            <option value="70MM a 150MM">70MM a 150MM</option>
+            <option value="+ de 150MM">+ de 150MM</option>
+        </select>
+
+        <label for="dormitorios">¿Cuántos dormitorios?</label>
+        <select id="00NHs0000119xZ1" name="00NHs0000119xZ1" title="Dormitorios" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4 o +">4 o más</option>
+        </select>
+
+        <label for="baños">¿Cuántos baños?</label>
+        <select id="00NHs0000119xZB" name="00NHs0000119xZB" title="Baños" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="5 o +">5 o más</option>
+        </select>
+
+        <label for="modelo">¿Qué modelo quieres cotizar?</label>
+        <select id="00NHs0000119xYs" name="00NHs0000119xYs" title="Modelo a cotizar" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="Tiny Co-ol">Tiny Co-ol</option>
+            <option value="Neltume">Neltume</option>
+            <option value="Maihue">Maihue</option>
+            <option value="Yelcho">Yelcho</option>
+            <option value="Puyehue">Puyehue</option>
+            <option value="Riñihue">Riñihue</option>
+            <option value="Rupanco">Rupanco</option>
+            <option value="Ranco">Ranco</option>
+        </select>
+
+        <label for="lead_source">¿Por qué canal nos encontraste?</label>
+        <select id="lead_source" name="lead_source" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="Otros">Otros</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Whatsapp">Whatsapp</option>
+            <option value="TikTok">TikTok</option>
+        </select>
+
+        <label for="quien">¿Con quién hablaste antes de contactarnos?</label>
+        <select id="00NHs0000119xZa" name="00NHs0000119xZa" title="Con quien hablaste antes de contactarnos" required>
+            <option value="">--Seleccione una opción--</option>
+            <option value="Anita del Canto">Anita del Canto</option>
+            <option value="Daniel Calderón">Daniel Calderón</option>
+            <option value="Eva Moreno">Eva Moreno</option>
+            <option value="Francisca Concha">Francisca Concha</option>
+            <option value="José Aceitón">José Aceitón</option>
+            <option value="Ninguno">Ninguno</option>
+        </select>
+
+        <label for="comentario">¿Tienes una consulta o deseas dejarnos un comentario?</label>
+        <textarea id="00NHs0000119xZf" name="00NHs0000119xZf" rows="3" wrap="soft" required></textarea>
+
+        <input type="submit" name="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+</html>
